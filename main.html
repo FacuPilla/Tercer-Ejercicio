@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <p> En pantalla hay 4 colores.</p> 
+    <p> ¿podes adivinar cual color es el siguiente?</p>   
+
+    <p style="text-align: center;">#9147ff</p>
+
+    <div class="container">
+   
+    <div onclick="AlertIncorrect(this)" style="background-color:#00f508;width:150px;height:200px;margin:40px;float: left;"></div>
+
+    <div onclick="AlertCorrect(this)" style="background-color:#9147ff;width:150px;height:200px;margin:40px;float: left;"></div>
+
+    <div onclick="AlertIncorrect(this)" style="background-color:#eaff00;width:150px;height:200px;margin:40px;float: left;"></div>
+
+    <div onclick="AlertIncorrect(this)" style="background-color:#1b287a;width:150px;height:200px;margin:40px;float: left;"></div>
+
+    </div>  
+
+    <script>
+        function AlertCorrect() {
+            alert("Adivinaste era ese")
+        }
+
+        function AlertIncorrect() {
+            alert("Color incorrecto")
+        }
+    </script>
+    
+</body>
+</html>
